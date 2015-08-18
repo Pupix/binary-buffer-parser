@@ -1,2 +1,2 @@
-# binary-buffer-parser (WIP)
+# binary-buffer-parser
 A simple buffer.
