@@ -4,16 +4,15 @@ A simple binary buffer parser.
 ## Download
 binary-buffer-parser is installable via:
 
-- [GitHub](https://github.com/Pupix/binary-buffer-parser) `git clone https://github.com/Pupix/sbinary-buffer-parser.git`
+- [GitHub](https://github.com/Pupix/binary-buffer-parser) `git clone https://github.com/Pupix/binary-buffer-parser.git`
 - [npm](https://www.npmjs.com/): `npm install binary-buffer-parser`
 
 ## Quick example
 
 ```js
-var Queue = require('fs'),
-    BinaryParser = require('binary-buffer-parser'),
+var BinaryParser = require('binary-buffer-parser'),
     buffer = new Buffer('Hello world!')
-    parser = new BinaryParser(data);
+    parser = new BinaryParser(buffer);
         
     console.log(parser.int8()); // 72
     console.log(parser.uint32()); // 1869376613
