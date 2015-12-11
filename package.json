@@ -24,6 +24,15 @@
   "dependencies": {
     "expandjs": "^0.9.0"
   },
+  "devDependencies": {
+    "browserify": "*",
+    "minifyify": "*"
+  },
+  "scripts": {
+    "build": "npm run build:browserify && npm run build:minify",
+    "build:browserify": "browserify index -i expandjs --standalone BufferParser > dist/binary-buffer-parser.js",
+    "build:minify": "browserify -d index -i expandjs --standalone BufferParser -p [minifyify --map dist/binary-buffer-parser.map.json --output dist/binary-buffer-parser.map.json] > dist/binary-buffer-parser.min.js"
+  },
   "keywords": [
     "binary",
     "parser"
