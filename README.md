@@ -1,5 +1,5 @@
 # binary-buffer-parser
-A simple binary buffer parser.
+A simple binary buffer parser with support for infinite sized files.
 
 ## Download
 binary-buffer-parser is installable via:
@@ -37,6 +37,8 @@ var BinaryParser = require('binary-buffer-parser'),
 * [`uint16 / ushort`](#/uint16)
 * [`int32 / int`](#/int32)
 * [`uint32 / uint`](#/uint32)
+* [`int64`](#/int64)
+* [`uint64`](#/uint64)
 * [`float`](#/float)
 * [`double / long`](#/double)
 * [`string`](#/string)
@@ -51,6 +53,10 @@ var BinaryParser = require('binary-buffer-parser'),
 * [`stringView`](#/stringView)
 * [`hexView`](#/hexView)
 * [`ansiView`](#/ansiView)
+
+####[File Methods](#/file-methods)
+* [`open`](#/open)
+* [`close`](#/close)
 
 ---
 
@@ -155,6 +161,30 @@ will be ran multiple times and return the result as an array.
 
 1. **[length] {number}** The number of uint32 to read consecutively
 
+<a name="/int64" />
+### int64(length)
+
+Reads a signed 64 bit integer from the buffer. If `length` is passed, the same function
+will be ran multiple times and return the result as an array.
+
+**N.B** Due to JavaScript's limitations for long int all int64 values will be returned as a hexadecimal string
+
+**Parameters**
+
+1. **[length] {number}** The number of int32 to read consecutively
+
+<a name="/uint64" />
+### uint64(length)
+
+Reads a unsigned 64 bit integer from the buffer. If `length` is passed, the same function
+will be ran multiple times and return the result as an array. 
+
+**N.B** Due to JavaScript's limitations for long int all uint64 values will be returned as a hexadecimal string
+
+**Parameters**
+
+1. **[length] {number}** The number of uint32 to read consecutively
+
 <a name="/float" />
 ### float(length)
 
@@ -227,3 +257,21 @@ Returns the buffer in hexadecimal encoding inside an array, divided by byte.
 ### ansiView()
 
 Returns the buffer in ANSI encoding inside an array, divided by character.
+
+
+<a name="/file-methods" />
+## File Methods
+
+<a name="/open" />
+### open(path)
+
+Opens and reads a file from the specified path.
+
+**Parameters**
+
+1. **path {string}** The path to retrieve the file from.
+
+<a name="/close" />
+### close()
+
+Closes the file previously opened.
