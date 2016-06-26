@@ -43,6 +43,8 @@ var BinaryParser = require('binary-buffer-parser'),
 * [`double / long`](#/double)
 * [`string`](#/string)
 * [`string0`](#/string0)
+* [`hex`](#/hex)
+* [`ansi`](#/ansi)
 
 ####[Bitfield Methods](#/bitfield-methods)
 * [`bit8`](#/bit8)
@@ -218,6 +220,26 @@ Reads an ASCII string from the buffer.
 ### string0()
 
 Reads a null terminated ASCII string from the buffer.
+
+<a name="/hex" />
+### hex(length)
+
+Reads a byte from the buffer and return its hexadecimal representation. If `length` is passed, the same function
+will be ran multiple times and return the result as an array. 
+
+**Parameters**
+
+1. **[length] {number}** The number of bytes to read consecutively
+
+<a name="/ansi" />
+### ansi(length)
+
+Reads a byte from the buffer and return its ansi representation. If `length` is passed, the same function
+will be ran multiple times and return the result as an array. 
+
+**Parameters**
+
+1. **[length] {number}** The number of bytes to read consecutively
 
 <a name="/bitfield-methods" />
 ## Bitfield methods
