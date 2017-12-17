@@ -2,7 +2,7 @@
 # binary-buffer-parser
 A binary buffer parser with support for infinite sized files.
 
-[![Build Status](https://travis-ci.org/pupix/binary-buffer-parser.svg?branch=master)](https://travis-ci.org/molenzwiebel/Mimic)
+[![Build Status](https://travis-ci.org/pupix/binary-buffer-parser.svg?branch=master)](https://travis-ci.org/pupix/binary-buffer-parser)
 [![Pupix's Discord](https://img.shields.io/badge/discord-My%20projects-738bd7.svg?style=flat)](https://discord.gg/hPtrMcx)
 
 ## Download
