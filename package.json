@@ -1,12 +1,15 @@
 {
   "name": "binary-buffer-parser",
   "license": "MIT",
-  "description": "A simple buffer parser.",
-  "version": "1.1.2",
+  "description": "A binary buffer parser with support for infinite sized files",
+  "version": "2.0.0",
   "homepage": "https://github.com/Pupix/binary-buffer-parser",
   "author": {
     "name": "Robert Manolea",
     "email": "manolea.robert@gmail.com"
+  },
+  "scripts": {
+    "test": "jest"
   },
   "contributors": [
     {
@@ -22,11 +25,23 @@
     "url": "https://github.com/Pupix/binary-buffer-parser/issues"
   },
   "dependencies": {
-    "expandjs": "^0.9.0"
+    "fs-extra": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-security": "1.4.0",
+    "jest": "^20.0.4"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "keywords": [
     "binary",
     "buffer",
+    "file",
     "parser"
   ]
 }
