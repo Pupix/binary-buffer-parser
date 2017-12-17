@@ -2,8 +2,8 @@
 # binary-buffer-parser
 A binary buffer parser with support for infinite sized files.
 
-[![Build Status](https://travis-ci.org/pupix/Mimic.svg?branch=master)](https://travis-ci.org/molenzwiebel/Mimic)
-[![Pupix's Discord](https://img.shields.io/badge/discord-My projects-738bd7.svg?style=flat)](https://discord.gg/hPtrMcx)
+[![Build Status](https://travis-ci.org/pupix/binary-buffer-parser.svg?branch=master)](https://travis-ci.org/molenzwiebel/Mimic)
+[![Pupix's Discord](https://img.shields.io/badge/discord-My%20projects-738bd7.svg?style=flat)](https://discord.gg/hPtrMcx)
 
 ## Download
 binary-buffer-parser is installable via:
@@ -19,7 +19,7 @@ Parsing buffers
 const BinaryParser = require('binary-buffer-parser');
 const buffer = Buffer.from('Hello world!');
 const bufferParser = new BinaryParser(buffer);
-        
+
 console.log(bufferParser.int8()); // 72
 console.log(bufferParser.uint32()); // 1869376613
 console.log(bufferParser.string(parser.size())) // Hello World!
@@ -29,7 +29,7 @@ Parsing files
 ```js
 const BinaryParser = require('binary-buffer-parser');
 const fileParser = new BinaryParser();
-        
+
 fileParser.open('/path/to/file');
 console.log(fileParser.int8());
 console.log(fileParser.uint32());
@@ -153,7 +153,7 @@ Reads a 64 bit signed integer from the buffer / file.
 
 ### string(length)
 
-Reads an ASCII string from the buffer / file. 
+Reads an ASCII string from the buffer / file.
 
 **Parameters**
 
