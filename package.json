@@ -2,7 +2,7 @@
   "name": "binary-buffer-parser",
   "license": "MIT",
   "description": "A binary buffer parser with support for infinite sized files",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "homepage": "https://github.com/Pupix/binary-buffer-parser",
   "author": {
     "name": "Robert Manolea",

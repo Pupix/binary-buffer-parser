@@ -163,6 +163,18 @@ Reads an ASCII string from the buffer / file.
 
 Reads a null terminated ASCII string from the buffer.
 
+### wstring(length)
+
+Reads an UTF16 string from the buffer / file.
+
+**Parameters**
+
+1. **{number} [length = 1] ** The length of the string.
+
+### wstring0()
+
+Reads a null terminated an UTF16 string string from the buffer.
+
 ## Bitfield methods
 
 ### bit8(length)
