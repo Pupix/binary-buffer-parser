@@ -157,7 +157,7 @@ Reads an ASCII string from the buffer / file.
 
 **Parameters**
 
-1. **{number} [length = 1] ** The length of the string.
+1. **{number} [length = 1]** The length of the string.
 
 ### string0()
 
@@ -169,11 +169,11 @@ Reads an UTF16 string from the buffer / file.
 
 **Parameters**
 
-1. **{number} [length = 1] ** The length of the string.
+1. **{number} [length = 1]** The length of the string.
 
 ### wstring0()
 
-Reads a null terminated an UTF16 string string from the buffer.
+Reads a null terminated UTF16 string from the buffer.
 
 ## Bitfield methods
 
